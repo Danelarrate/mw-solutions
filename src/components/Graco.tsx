@@ -8,7 +8,7 @@ export const Graco = () => {
       x='0px'
       y='0px'
       viewBox='0 0 359 290'
-      enable-background='new 0 0 359 290'
+      enableBackground='new 0 0 359 290'
     >
       <path
         fill='#000000'

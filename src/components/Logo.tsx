@@ -1,8 +1,6 @@
 export const Logo = ({
-  bottom = '#967F71',
-  top = '#000000',
-  classNameTop = '',
-  classNameBottom = '',
+  classNameTop = 'fill-black',
+  classNameBottom = 'fill-primary',
   height = 50,
   width = 50
 }) => {
@@ -16,10 +14,9 @@ export const Logo = ({
       height={height}
       width={width}
       viewBox='0 0 504 549'
-      enable-background='new 0 0 504 549'
+      enableBackground='new 0 0 504 549'
     >
       <path
-        fill={bottom}
         className={classNameBottom}
         opacity='1.000000'
         stroke='none'
@@ -41,7 +38,6 @@ M198.000000,438.999603
 z'
       />
       <path
-        fill={bottom}
         className={classNameBottom}
         opacity='1.000000'
         stroke='none'
@@ -61,7 +57,6 @@ M365.692871,295.673157
 z'
       />
       <path
-        fill={bottom}
         className={classNameBottom}
         opacity='1.000000'
         stroke='none'
@@ -81,7 +76,6 @@ M234.972473,200.013367
 z'
       />
       <path
-        fill={top}
         className={classNameTop}
         opacity='1.000000'
         stroke='none'
@@ -103,7 +97,6 @@ M308.983978,130.000488
 z'
       />
       <path
-        fill={top}
         className={classNameTop}
         opacity='1.000000'
         stroke='none'
@@ -126,7 +119,6 @@ M91.677498,189.676834
 z'
       />
       <path
-        fill={top}
         className={classNameTop}
         opacity='1.000000'
         stroke='none'

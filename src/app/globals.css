@@ -5,8 +5,6 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --top:#FFFFFF;
-  --bottom:#c3c3c3;
 }
 
 
@@ -22,27 +20,61 @@ body {
     text-wrap: balance;
   }
 }
-.navText{
-  color: white;
-    mix-blend-mode: difference;
-}
-.navColor{
-  
+
+.navColor {
   animation: changeNav linear forwards;
   animation-timeline: view();
-  animation-range-start:100vh ;
+  animation-range-start: 100vh;
   animation-range-end: 120vh;
 }
+
 @keyframes changeNav {
   0% {
-      background-color: transparent;
-      color: white;
-    }
-  
-    100% {
-      background-color: white;
-      color: black !important;
-    }
+    background-color: transparent;
+    color: white;
+  }
+
+  100% {
+    background-color: white;
+    color: black !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  }
+}
+
+.topLogo {
+  animation: changeTop linear forwards;
+  animation-timeline: view();
+  animation-range-start: 100vh;
+  animation-range-end: 120vh;
+  fill: #c3c3c3
+}
+
+@keyframes changeTop {
+  0% {
+    fill: #c3c3c3
+  }
+
+  100% {
+    fill: #000000
+  }
+}
+
+.botLogo {
+  animation: changeBot linear forwards;
+  animation-timeline: view();
+  animation-range-start: 100vh;
+  animation-range-end: 120vh;
+  fill: white
+}
+
+@keyframes changeBot {
+  0% {
+    fill: white
+  }
+
+  100% {
+    fill: #967F71
+  }
 }
 
 .testing {
@@ -61,33 +93,54 @@ body {
   /* Usa la imagen de ruido aquí */
   background-size: cover;
   background-clip: text;
-    background: url('../public/noice.png'),
+  background: url('../public/noice.png'),
     linear-gradient(90deg, #967F71, #705849);
-  
-    /* Rojo a verde */
-    background-size: 50%, cover;
-    background-blend-mode: multiply;
-    /* Mezcla el gradiente con el fondo */
-    
-    -webkit-background-clip: text;
-    background-clip: text;
+
+  /* Rojo a verde */
+  background-size: 50%, cover;
+  background-blend-mode: multiply;
+  /* Mezcla el gradiente con el fondo */
+
+  -webkit-background-clip: text;
+  background-clip: text;
   /* Animación del rociado */
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    /* Inicialmente cubre todo el texto */
-    animation: paint-spray 5s forwards ease-in ;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  /* Inicialmente cubre todo el texto */
+  animation: paint-spray 5s forwards ease-in;
+}
+
+@keyframes paint-spray {
+  0% {
+    clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    /* Sin pintar */
   }
-  
- @keyframes paint-spray {
-   0% {
-     clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
-     /* Sin pintar */
-   }
-   10%{clip-path: polygon(0 33%, 0 0, 100% 0, 100% 33%,100% 33%, 75% 33%, 75% 33%);}
-   20%{clip-path: polygon(0 33%, 0 0, 100% 0, 100% 33%, 100% 66%, 75% 66%, 75% 33%);}
-    30%{clip-path: polygon(0 33%, 0 0, 100% 0, 100% 33%, 100% 66%, 0 66%, 0 33%);}
-   40%{clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 0% 66%, 0% 66%, 0 66%);}
-   50%{clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 100% 66%, 100% 66%, 0 66%);}
-   60%{clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 100% 100%, 66% 100%, 66% 66%);}
-   70%{clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 100% 100%, 0 100%, 0 66%);} 
-  
- }
+
+  10% {
+    clip-path: polygon(0 33%, 0 0, 100% 0, 100% 33%, 100% 33%, 75% 33%, 75% 33%);
+  }
+
+  20% {
+    clip-path: polygon(0 33%, 0 0, 100% 0, 100% 33%, 100% 66%, 75% 66%, 75% 33%);
+  }
+
+  30% {
+    clip-path: polygon(0 33%, 0 0, 100% 0, 100% 33%, 100% 66%, 0 66%, 0 33%);
+  }
+
+  40% {
+    clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 0% 66%, 0% 66%, 0 66%);
+  }
+
+  50% {
+    clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 100% 66%, 100% 66%, 0 66%);
+  }
+
+  60% {
+    clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 100% 100%, 66% 100%, 66% 66%);
+  }
+
+  70% {
+    clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 100% 100%, 0 100%, 0 66%);
+  }
+
+}

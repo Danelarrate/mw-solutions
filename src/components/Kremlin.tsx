@@ -9,7 +9,7 @@ export const Kremlin = () => {
       width={'2.5rem'}
       height={'2.5rem'}
       viewBox='0 0 80 95'
-      enable-background='new 0 0 80 95'
+      enableBackground='new 0 0 80 95'
     >
       <path
         fill='#060606'
