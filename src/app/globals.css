@@ -11,7 +11,7 @@
 
 
 body {
-  color: var(--foreground);
+  color: var(--background);
   background: var(--background);
   font-family: var(--font-poppins);
 }
@@ -25,8 +25,8 @@ body {
 .navColor {
   animation: changeNav linear forwards;
   animation-timeline: view();
-  animation-range-start: 100vh;
-  animation-range-end: 120vh;
+  animation-range-start: 100lvh;
+  animation-range-end: 120lvh;
 }
 
 @keyframes changeNav {
