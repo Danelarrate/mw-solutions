@@ -5,14 +5,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --top:#FFFFFF;
+  --bottom:#c3c3c3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
   color: var(--foreground);
@@ -25,3 +22,72 @@ body {
     text-wrap: balance;
   }
 }
+.navText{
+  color: white;
+    mix-blend-mode: difference;
+}
+.navColor{
+  
+  animation: changeNav linear forwards;
+  animation-timeline: view();
+  animation-range-start:100vh ;
+  animation-range-end: 120vh;
+}
+@keyframes changeNav {
+  0% {
+      background-color: transparent;
+      color: white;
+    }
+  
+    100% {
+      background-color: white;
+      color: black !important;
+    }
+}
+
+.testing {
+
+  /* Tamaño del texto */
+  font-weight: bold;
+  color: transparent;
+  /* Hacemos el texto transparente para que se vea el fondo */
+  position: relative;
+  display: inline-block;
+  /* Asegura que el texto ocupe solo el espacio necesario */
+  width: fit-content;
+  height: fit-content;
+  /* Fondo con ruido */
+
+  /* Usa la imagen de ruido aquí */
+  background-size: cover;
+  background-clip: text;
+    background: url('../public/noice.png'),
+    linear-gradient(90deg, #967F71, #705849);
+  
+    /* Rojo a verde */
+    background-size: 50%, cover;
+    background-blend-mode: multiply;
+    /* Mezcla el gradiente con el fondo */
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+  /* Animación del rociado */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    /* Inicialmente cubre todo el texto */
+    animation: paint-spray 5s forwards ease-in ;
+  }
+  
+ @keyframes paint-spray {
+   0% {
+     clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+     /* Sin pintar */
+   }
+   10%{clip-path: polygon(0 33%, 0 0, 100% 0, 100% 33%,100% 33%, 75% 33%, 75% 33%);}
+   20%{clip-path: polygon(0 33%, 0 0, 100% 0, 100% 33%, 100% 66%, 75% 66%, 75% 33%);}
+    30%{clip-path: polygon(0 33%, 0 0, 100% 0, 100% 33%, 100% 66%, 0 66%, 0 33%);}
+   40%{clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 0% 66%, 0% 66%, 0 66%);}
+   50%{clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 100% 66%, 100% 66%, 0 66%);}
+   60%{clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 100% 100%, 66% 100%, 66% 66%);}
+   70%{clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 100% 100%, 0 100%, 0 66%);} 
+  
+ }
