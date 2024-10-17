@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-poppins: 'Poppins',Arial,
+  --font-poppins: 'Poppins', Arial,
     Helvetica, sans-serif;
 }
 
@@ -25,8 +25,8 @@ body {
 .navColor {
   animation: changeNav linear forwards;
   animation-timeline: view();
-  animation-range-start: 100lvh;
-  animation-range-end: 120lvh;
+  animation-range-start: 100svh;
+  animation-range-end: 120svh;
 }
 
 @keyframes changeNav {
@@ -45,8 +45,8 @@ body {
 .topLogo {
   animation: changeTop linear forwards;
   animation-timeline: view();
-  animation-range-start: 100vh;
-  animation-range-end: 120vh;
+  animation-range-start: 100svh;
+  animation-range-end: 120svh;
   fill: #c3c3c3
 }
 
@@ -63,8 +63,8 @@ body {
 .botLogo {
   animation: changeBot linear forwards;
   animation-timeline: view();
-  animation-range-start: 100vh;
-  animation-range-end: 120vh;
+  animation-range-start: 100svh;
+  animation-range-end: 120svh;
   fill: white
 }
 
@@ -75,6 +75,22 @@ body {
 
   100% {
     fill: #967F71
+  }
+}
+
+@supports not (animation-timeline: view()) {
+  .navColor {
+    background-color: #ffffff;
+    color: #000000 !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  }
+
+  .botLogo {
+    fill: #967F71;
+  }
+
+  .topLogo {
+    fill: #000000;
   }
 }
 
@@ -100,25 +116,25 @@ body {
 
   -webkit-background-clip: text;
   animation: gifAnimation 10s forwards;
+}
+
+@keyframes gifAnimation {
+
+  0%,
+  50% {}
+
+  100% {
+    background: transparent;
+    color: white;
+    background-clip: text;
+    background-blend-mode: normal;
   }
-  
-  @keyframes gifAnimation {
-    0%, 
-    50%{
-      
-    }
-    100% {
-      background: transparent;
-      color: white;
-      background-clip: text;
-      background-blend-mode: normal;
-    }
-  }
+}
 
 .cabin-image {
-      background-image: url('../public/cabincar.jpg');
-      background-size: cover;
-    }
+  background-image: url('../public/cabincar.jpg');
+  background-size: cover;
+}
 
 .image-paint-brush {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
@@ -127,7 +143,7 @@ body {
   transition: all;
 }
 
-@media (prefers-reduced-motion:no-preference){
+@media (prefers-reduced-motion:no-preference) {
   .image-paint-brush:hover {
     animation: picGifAnimation 1.75s forwards;
     color: white;
@@ -150,4 +166,4 @@ body {
       background-blend-mode: normal;
     }
   }
-     }
+}
