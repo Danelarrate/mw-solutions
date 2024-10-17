@@ -5,7 +5,9 @@ export const Hero = () => {
         <h1 className=' md:text-6xl  text-4xl font-bold text-white z-10 '>
           <span className='inline-block '>Soluciones</span>
           <br />
-          <span className='inline-block  mt-2  testing'>en pintura</span>
+          <span className='inline-block  mt-2  text-paint-animation'>
+            en pintura
+          </span>
         </h1>
       </div>
     </div>

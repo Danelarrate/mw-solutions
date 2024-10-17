@@ -77,70 +77,40 @@ body {
   }
 }
 
-.testing {
-
-  /* Tamaño del texto */
+.text-paint-animation {
   font-weight: bold;
   color: transparent;
-  /* Hacemos el texto transparente para que se vea el fondo */
+
   position: relative;
   display: inline-block;
-  /* Asegura que el texto ocupe solo el espacio necesario */
+
   width: fit-content;
   height: fit-content;
-  /* Fondo con ruido */
 
-  /* Usa la imagen de ruido aquí */
   background-size: cover;
   background-clip: text;
-  background: url('../public/noice.png'),
-    linear-gradient(90deg, #967F71, #705849);
+  background: url('../public/brush.gif'),
+    #a17d67;
 
-  /* Rojo a verde */
-  background-size: 50%, cover;
-  background-blend-mode: multiply;
-  /* Mezcla el gradiente con el fondo */
+
+  background-size: 100%, cover;
+  background-blend-mode: lighten;
+
 
   -webkit-background-clip: text;
-  background-clip: text;
-  /* Animación del rociado */
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  /* Inicialmente cubre todo el texto */
-  animation: paint-spray 5s forwards ease-in;
-}
-
-@keyframes paint-spray {
-  0% {
-    clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
-    /* Sin pintar */
+  animation: gifAnimation 10s forwards;
   }
+  
+  @keyframes gifAnimation {
+    0%, 
+    50%{
+      
+    }
+    100% {
+      background: transparent;
+      color: black;
+      background-clip: text;
+      background-blend-mode: normal;
 
-  10% {
-    clip-path: polygon(0 33%, 0 0, 100% 0, 100% 33%, 100% 33%, 75% 33%, 75% 33%);
+    }
   }
-
-  20% {
-    clip-path: polygon(0 33%, 0 0, 100% 0, 100% 33%, 100% 66%, 75% 66%, 75% 33%);
-  }
-
-  30% {
-    clip-path: polygon(0 33%, 0 0, 100% 0, 100% 33%, 100% 66%, 0 66%, 0 33%);
-  }
-
-  40% {
-    clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 0% 66%, 0% 66%, 0 66%);
-  }
-
-  50% {
-    clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 100% 66%, 100% 66%, 0 66%);
-  }
-
-  60% {
-    clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 100% 100%, 66% 100%, 66% 66%);
-  }
-
-  70% {
-    clip-path: polygon(0 66%, 0 0, 100% 0, 100% 66%, 100% 100%, 0 100%, 0 66%);
-  }
-
-}
