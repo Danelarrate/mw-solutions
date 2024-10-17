@@ -27,7 +27,6 @@ body {
   animation-timeline: view();
   animation-range-start: 100vh;
   animation-range-end: 120vh;
-  color: #ffffff;
 }
 
 @keyframes changeNav {
