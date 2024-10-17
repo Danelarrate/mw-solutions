@@ -1,6 +1,5 @@
 import { CheckCircle } from 'lucide-react'
-import Image from 'next/image'
-import cabincar from '../public/cabincar.jpg'
+
 export const CabinSection = () => {
   return (
     <section className='py-12 bg-white'>
@@ -8,15 +7,7 @@ export const CabinSection = () => {
         <div className='flex flex-col md:flex-row items-center'>
           {/* Left side - Image */}
           <div className='w-full bg-black md:w-1/2 mb-8 md:mb-0 relative'>
-            <div className=' xl:h-[600px] md:h-96 w-full xl:absolute xl:top-[-330px] shadow-xl'>
-              <Image
-                src={cabincar}
-                alt='Técnico en cabina de pintura'
-                layout='fill'
-                objectFit='cover'
-                className='rounded-lg'
-              />
-            </div>
+            <div className=' xl:h-[600px] md:h-96 w-full xl:absolute xl:top-[-330px] shadow-xl cabin-image rounded-lg'></div>
           </div>
 
           {/* Right side - Content */}

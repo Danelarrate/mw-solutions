@@ -51,8 +51,8 @@ export const Brands = () => {
                 {brand.logo}
               </div>
 
-              <div className='absolute inset-0 bg-black bg-opacity-75 rounded-lg flex items-center justify-center p-4 transition-opacity duration-300 opacity-0 hover:opacity-100'>
-                <p className='text-white text-center'>{brand.description}</p>
+              <div className='absolute inset-0 rounded-lg flex items-center justify-center p-4 image-paint-brush'>
+                <p className=' text-center'>{brand.description}</p>
               </div>
 
               <div className='sr-only'>{brand.description}</div>

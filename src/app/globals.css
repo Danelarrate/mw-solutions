@@ -108,9 +108,45 @@ body {
     }
     100% {
       background: transparent;
-      color: black;
+      color: white;
       background-clip: text;
       background-blend-mode: normal;
-
     }
   }
+
+.cabin-image {
+      background-image: url('../public/cabincar.jpg');
+      background-size: cover;
+    }
+
+.image-paint-brush {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-size: cover;
+  color: transparent;
+  transition: all;
+}
+
+@media (prefers-reduced-motion:no-preference){
+  .image-paint-brush:hover {
+    animation: picGifAnimation 1.75s forwards;
+    color: white;
+    /* Duración de la animación */
+  }
+
+  @keyframes picGifAnimation {
+    0% {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url('../public/brush.gif');
+      background-blend-mode: multiply;
+    }
+
+    99% {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url('../public/brush.gif');
+      background-blend-mode: multiply;
+    }
+
+    100% {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+      background-blend-mode: normal;
+    }
+  }
+     }
