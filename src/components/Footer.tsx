@@ -73,7 +73,7 @@ export const Footer = () => {
         <div className='sm:flex sm:items-center sm:justify-between'>
           <span className='text-sm text-gray-400 sm:text-center '>
             © 2024 <span className='hover:underline'>MW</span>. Creado por{' '}
-            <Link href={'#'}>
+            <Link href={'https://danelarrate.com.ar'} target='_blank'>
               Danel Arrate
               <span className='sr-only'>Danel Arrate portfolio</span>
             </Link>
