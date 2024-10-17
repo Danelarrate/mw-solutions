@@ -11,7 +11,7 @@
 
 
 body {
-  color: var(--background);
+
   background: var(--background);
   font-family: var(--font-poppins);
 }
