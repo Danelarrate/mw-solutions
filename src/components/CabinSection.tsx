@@ -6,7 +6,7 @@ export const CabinSection = () => {
       <div className='container mx-auto px-4 md:px-6'>
         <div className='flex flex-col md:flex-row items-center'>
           {/* Left side - Image */}
-          <div className='w-full bg-black md:w-1/2 mb-8 md:mb-0 relative'>
+          <div className='w-full md:w-1/2 mb-8 md:mb-0 relative'>
             <div className=' xl:h-[600px] md:h-96 w-full xl:absolute xl:top-[-330px] shadow-xl cabin-image rounded-lg'></div>
           </div>
 

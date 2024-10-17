@@ -7,7 +7,7 @@ import { WhyUs } from '@/components/WhyUs'
 
 export default function Home() {
   return (
-    <main className=' min-h-dvh'>
+    <main>
       <Hero />
       <WhyUs />
       <AboutUs />

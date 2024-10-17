@@ -4,17 +4,36 @@ import './globals.css'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900'
+export const poppins = localFont({
+  src: [
+    {
+      path: './fonts/Poppins-Regular.ttf',
+      weight: '400', // Peso normal
+      style: 'normal'
+    },
+    {
+      path: './fonts/Poppins-Bold.ttf',
+      weight: '700', // Peso negrita
+      style: 'normal'
+    },
+    {
+      path: './fonts/Poppins-Medium.ttf',
+      weight: '500', // Peso medio
+      style: 'normal'
+    },
+    {
+      path: './fonts/Poppins-SemiBold.ttf',
+      weight: '600', // Peso semi-negrita
+      style: 'normal'
+    },
+    {
+      path: './fonts/Poppins-Light.ttf',
+      weight: '300', // Peso ligero
+      style: 'normal'
+    }
+  ],
+  variable: '--font-poppins' // Esta variable se aplicará globalmente
 })
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900'
-})
-
 export const metadata: Metadata = {
   title: 'MW Soluciones',
   description: 'Distruidor de maquinas de pintura'
@@ -27,9 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${poppins.variable}  antialiased`}>
         <Navbar />
         {children}
         <Footer />
