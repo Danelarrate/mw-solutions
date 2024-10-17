@@ -27,17 +27,18 @@ body {
   animation-timeline: view();
   animation-range-start: 100vh;
   animation-range-end: 120vh;
+  color: #ffffff;
 }
 
 @keyframes changeNav {
   0% {
     background-color: transparent;
-    color: white;
+    color: #ffffff;
   }
 
   100% {
-    background-color: white;
-    color: black !important;
+    background-color: #ffffff;
+    color: b#000000 !important;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
   }
 }
