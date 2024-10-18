@@ -10,19 +10,23 @@ export const Contact = () => {
             <ul className='space-y-4 inline-flex flex-col md:justify-end'>
               <li className='inline-flex items-center'>
                 <Phone className='mr-2 h-5 w-5 text-primary' />
-                <span>+54 911 3373-7606</span>
+                <span>+54 9 11 5606-0071</span>
               </li>
               <li className='inline-flex items-center'>
                 <Phone className='mr-2 h-5 w-5 text-primary' />
-                <span>+54 911 5606-0071</span>
+                <span>+54 9 11 4067-4216</span>
               </li>
               <li className='inline-flex items-center'>
                 <Mail className='mr-2 h-5 w-5 text-primary' />
-                <span>info@twinspaint.com.ar</span>
+                <span>mario.mwsoluciones@outlook.com</span>
+              </li>
+              <li className='inline-flex items-center'>
+                <Mail className='mr-2 h-5 w-5 text-primary' />
+                <span>juanignacio.mwsoluciones@outlook.com</span>
               </li>
               <li className='inline-flex items-center'>
                 <MapPin className='mr-2 h-5 w-5 text-primary' />
-                <span>Av. Hipólito Yrigoyen 314 | Morón</span>
+                <span> Kiernan 2081 | Hurlingham</span>
               </li>
             </ul>
           </div>
@@ -30,7 +34,7 @@ export const Contact = () => {
           <div className='w-full md:w-1/2'>
             <div className='w-full h-full'>
               <iframe
-                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.593141670064!2d-58.62210548417401!3d-34.64577306721791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc76f57e3be0d%3A0x4b41941a6595e747!2sAv.%20Hip%C3%B3lito%20Yrigoyen%20314%2C%20B1708FVH%20Mor%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1sen!2sus!4v1635789876543!5m2!1sen!2sus'
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.135160952058!2d-58.636808358003385!3d-34.60074356490024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb92fe51d2a97%3A0xdefe30694140c223!2sKiernan%202081!5e0!3m2!1ses!2sar!4v1729294448365!5m2!1ses!2sar'
                 width='100%'
                 height='100%'
                 style={{ border: 0 }}
