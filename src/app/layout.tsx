@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import './globals.css'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
+import { Wp } from '@/components/Wp'
 
 export const poppins = localFont({
   src: [
@@ -50,6 +51,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Wp />
       </body>
     </html>
   )
