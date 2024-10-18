@@ -106,8 +106,12 @@ z'
     </svg>
   )
   return (
-    <div className='inline-flex justify-center items-center uppercase text-xl font-bold'>
-      Sames<span className=' animate-wiggle'>{svg}</span> kremlin
+    <div className='inline-flex justify-center items-baseline uppercase text-xl font-bold'>
+      Sames
+      <span className=' translate-y-1/4'>
+        <span className='animate-wiggle'>{svg}</span>
+      </span>{' '}
+      kremlin
     </div>
   )
 }

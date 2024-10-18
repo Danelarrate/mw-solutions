@@ -5,7 +5,7 @@ export const Wp = () => {
     <Link
       href={'https://wa.me/1XXXXXXXXXX'}
       target='_blank'
-      className='md:w-20 md:h-20 w-16 h-16 fixed md:bottom-10 md:right-10 bottom-5 right-5 bg-wp bg-contain animate-bounce-delay '
+      className='md:w-20 md:h-20 w-16 h-16 fixed md:bottom-10 md:right-10 bottom-5 right-5 bg-wp bg-contain animate-bounce-delay-opacity '
     ></Link>
   )
 }

@@ -98,8 +98,8 @@ z'
     </svg>
   )
   return (
-    <div className='inline-flex justify-center items-center uppercase text-2xl font-bold gap-2'>
-      <span>{svg}</span> Graco
+    <div className='inline-flex justify-center items-baseline uppercase text-2xl font-bold gap-2'>
+      <span className=' translate-y-1/4'>{svg}</span> Graco
     </div>
   )
 }

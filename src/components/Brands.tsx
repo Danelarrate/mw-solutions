@@ -3,6 +3,7 @@
 import { ReactElement } from 'react'
 import { Kremlin } from './Kremlin'
 import { Graco } from './Graco'
+import { Wagner } from './Wagner'
 
 type Brand = {
   name: string
@@ -18,16 +19,16 @@ const brands: Brand[] = [
       'Representamos a esta compañía, líder mundial indiscutido en el sector si de productividad, calidad y ahorro de materiales se trata, siendo nuestra empresa sinónimo de Sames Kremlin en la industria metalmecánica y de la madera de la zona, habiendo vendido e instalado cientos de equipos de la marca.'
   },
   {
+    name: 'Wagner',
+    logo: <Wagner />,
+    description:
+      'WAGNER es uno de los proveedores líderes internacionales de sistemas y componentes para el tratamiento industrial de superficies con vasta experiencia en gran cantidad de áreas. Le ofrecemos la solución ideal para su área de aplicación individual, tanto si se trata de instalaciones completas como de componentes individuales'
+  },
+  {
     name: 'graco',
     logo: <Graco />,
     description:
       'Graco es el mayor fabricante en el mundo de equipos de pulverización de “primera calidad” para la aplicación de pinturas en la construcción. Posee la más amplia línea de productos del mercado para todas las aplicaciones y necesidades de los usuarios. En empresas, contratistas profesionales de la pintura, mantenimiento, para uso hobbysta.'
-  },
-  {
-    name: 'Brand Three',
-    logo: <Kremlin />,
-    description:
-      'Brand Three is revolutionizing the healthcare industry with advanced biotechnology.'
   }
 ]
 
