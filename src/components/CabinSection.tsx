@@ -7,7 +7,7 @@ export const CabinSection = () => {
         <div className='flex flex-col md:flex-row items-center'>
           {/* Left side - Image */}
           <div className='w-full md:w-1/2 mb-8 md:mb-0 relative'>
-            <div className=' xl:h-[600px] md:h-96 w-full xl:absolute xl:top-[-330px] shadow-xl cabin-image rounded-lg'></div>
+            <div className=' xl:h-[550px] md:h-96 w-full xl:absolute xl:top-[-275px] shadow-xl cabin-image rounded-lg'></div>
           </div>
 
           {/* Right side - Content */}
@@ -40,7 +40,7 @@ export const CabinSection = () => {
                 </li>
               ))}
             </ul>
-            <button className='mt-8 p-2 bg-primary bg-opacity-100 text-white hover:bg-opacity-100'>
+            <button className='mt-8 p-2 px-4 bg-primary bg-opacity-100 text-white hover:bg-opacity-100'>
               SOLICITA TU COTIZACIÓN
             </button>
           </div>

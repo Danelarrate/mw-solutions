@@ -6,7 +6,9 @@ export const Contact = () => {
         <div className='flex flex-col md:flex-row justify-center gap-10 md:min-h-96  text-center '>
           {/* Left side - Contact Information */}
           <div className='md:w-fit mb-8 md:mb-0  w-fit   md:mx-0 mx-auto'>
-            <h2 className='text-4xl font-bold mb-8  block '>CONTÁCTANOS</h2>
+            <h2 className='text-4xl font-bold mb-8  block  text-left'>
+              CONTÁCTANOS
+            </h2>
             <ul className='space-y-4 inline-flex flex-col md:justify-end'>
               <li className='inline-flex items-center'>
                 <Phone className='mr-2 h-5 w-5 text-primary' />
